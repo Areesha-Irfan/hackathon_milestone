@@ -1,0 +1,98 @@
+/* General styling for the resume builder */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.resume-builder {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+/* Section styling */
+.section {
+    margin-bottom: 20px;
+}
+
+.input-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.input-column {
+    flex: 1 1 45%; /* Makes the columns take up about half the space each */
+    min-width: 240px; /* Ensures the columns are not too narrow */
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #5c6bc0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3f4b8f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .input-row {
+        flex-direction: column; /* Stack inputs vertically on smaller screens */
+    }
+
+    .input-column {
+        flex: 1 1 100%;
+    }
+}
+
+/* Styling for the dynamic content (skills, education, experience) */
+#skillsContainer input,
+#educationContainer input,
+#experienceContainer input,
+#experienceContainer textarea {
+    margin-top: 10px;
+}
+
+button[type="button"] {
+    background-color: #4caf50;
+    margin-top: 10px;
+}
+
+button[type="button"]:hover {
+    background-color: #45a049;
+}
+
+/* Styling for resume preview */
+#resumePreview {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
